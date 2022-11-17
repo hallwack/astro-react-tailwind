@@ -1,0 +1,15 @@
+---
+import Counter from "../components/Counter";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col items-center justify-center h-screen gap-8">
+    <h1 class="text-purple-500 text-3xl font-bold">
+      This is <a href="https://astro.build/" class="hover:underline underline-offset-2">Astro</a> with <a
+        href="https://reactjs.org/" class="hover:underline underline-offset-2">ReactJS</a
+      > and <a href="https://tailwindcss.com/" class="hover:underline underline-offset-2">TailwindCSS</a>
+    </h1>
+    <Counter client:load />
+  </main>
+</Layout>
